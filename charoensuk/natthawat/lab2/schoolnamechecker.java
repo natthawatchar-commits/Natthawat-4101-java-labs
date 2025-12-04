@@ -6,7 +6,7 @@ package charoensuk.natthawat.lab2;
  * It prints the corresponding result.
  */
 
-public class schoolnamechecker {
+public class SchoolNameChecker {
     public static void main(String[]args){
         // Check if exactly one argument is provided
         if(args.length == 1){

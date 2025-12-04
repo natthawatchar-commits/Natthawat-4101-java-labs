@@ -5,7 +5,7 @@ package charoensuk.natthawat.lab2;
  * the number of each type of coin provided as arguments.
  */
 
-public class moneyprocessor {
+public class MoneyProcessor {
     public static void main(String[]args){
         // Check if exactly six arguments are provided
         if(args.length == 6){
