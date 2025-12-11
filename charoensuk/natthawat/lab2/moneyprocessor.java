@@ -18,7 +18,7 @@ public class MoneyProcessor {
             double num6 = Double.parseDouble(args[5]) * 0.25;
 
             double total = num1 + num2 + num3 + num4 + num5 + num6;  // Calculate the total amount
-            System.out.println("Total money : " + total + " Baht");  // Display the result
+            System.out.println("Total money : " + total + " Bath");  // Display the result
 
         } else {
             System.err.println("Error: Invalid number of arguments. Please provide exactly six arguments");
