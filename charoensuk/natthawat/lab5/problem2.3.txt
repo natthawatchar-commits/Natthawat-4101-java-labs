@@ -1,0 +1,46 @@
+2.3.1.1 Which version is easier to understand? Why? (Give at least 2 specific reasons) 
+    The OOP version is easier to understand.
+    1.  The method names in the OOP version are very clear and descriptive, such as searchByID(), 
+        determineGrade(), and getName(). When I read the code, I can easily understand what each part is doing 
+        without reading the internal details.
+    2.  All student-related data and behaviors are grouped together in the Student class. This makes the 
+        code easier to follow compared to the procedural version, which uses multiple arrays like ids, names, and 
+        scores separately and can be confusing.
+    3.  The OOP version does not require complex string parsing to get the grade. The logic is more straightforward 
+        and closer to how we think step by step, which makes it easier for beginners to read and understand.
+
+2.3.1.2 Which version would be easier for a new programmer to maintain? Explain your reasoning.
+    The OOP version would be easier for a new programmer to maintain.
+        In the OOP version, each class and method has a clear responsibility. If we want to change how the grade is 
+        calculated, we only need to modify the determineGrade() method in the Student class, without affecting 
+        other parts of the program.
+
+2.3.2.1 List all the places you would need to change code in the procedural version
+    1.  Score array declaration in main
+        Change the student score array to store 4 exam scores instead of 3.
+    2.  Sample score data
+        Add a 4th exam score for every student in the sample data.
+    3.  Average calculation logic
+        Ensure the average is calculated using all four exam scores.
+    4.  Score display formatting in displayStudent
+        Modify System.out.printf(...) to print four exam scores instead of three.
+    5.  Score display formatting in searchByID
+        Update the formatted output string to include the 4th exam score.
+    6.  Method parameters and assumptions
+        Review methods that assume a fixed number of exams and update them to work with four scores.
+
+2.3.2.2 List all the places you would need to change code to change in the OOP version
+    1.  Exam count constant in Student class
+        Change NUM_EXAMS from 3 to 4.
+    2.  Exam score array initialization
+        The array size automatically updates based on NUM_EXAMS.
+    3.  Constructor that accepts exam scores
+        Ensure the constructor copies all four exam scores correctly.
+    4.  Average calculation method (calculateAverage)
+        The method automatically adapts because it uses NUM_EXAMS.
+    5.  Grade and pass/fail determination
+        No logic change is required, but results now reflect four exams.
+    6.  Score display method (displayInfo)
+        Update the output format to display the 4th exam score.
+    7.  Sample data in GradeManagementSystem.main
+        Add the 4th exam score when creating Student objects.   
