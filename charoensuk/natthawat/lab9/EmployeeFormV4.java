@@ -11,8 +11,9 @@ package charoensuk.natthawat.lab9;
 
 import javax.swing.*;
 import java.awt.*;
+import charoensuk.natthawat.lab8.EmployeeFormV3;
 
-public class EmployeeFormV4 extends charoensuk.natthawat.lab8.EmployeeFormV3 {
+public class EmployeeFormV4 extends EmployeeFormV3 {
     public EmployeeFormV4(String title) {
         super(title);
     }
